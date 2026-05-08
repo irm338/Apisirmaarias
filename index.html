@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusShop - Catálogo Pro</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>CampusShop</h1>
+        <input type="text" id="inputBusqueda" placeholder="Buscar productos por nombre...">
+    </header>
+
+    <main>
+        <div id="cargando" class="mensaje">Cargando productos...</div>
+        <div id="error" class="mensaje oculto">Ups! Algo salió mal al conectar con la API.</div>
+
+        <section id="contenedor-productos" class="grid-productos"></section>
+    </main>
+
+    <div id="modal-detalle" class="modal oculto">
+        <div class="modal-contenido">
+            <span id="cerrar-modal">&times;</span>
+            <div id="detalle-info">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
